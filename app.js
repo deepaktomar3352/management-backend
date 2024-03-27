@@ -37,6 +37,11 @@ app.use('/schedule',scheduleRouter)
 app.use('/admin',adminRouter);
 app.use('/registration',registrationRouter)
 app.use('/emailmessage',emailMessageRouter)
+// Define route handler for HEAD /
+app.head('/', (req, res) => {
+  // Handle HEAD / request
+  res.sendStatus(200); // Respond with a 200 OK status
+});
 
 
 
