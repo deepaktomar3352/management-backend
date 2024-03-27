@@ -19,8 +19,8 @@ const sendMessageMail = async (emails, subject, heading, msg) => {
       secure: false,
       requireTLS: true,
       auth: {
-        user: "rohitthakur90098@gmail.com",
-        pass: "cjxovyuwaxoljtpz",
+        user: "",
+        pass: "",
       }
     });
 
